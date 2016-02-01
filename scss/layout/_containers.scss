@@ -16,6 +16,14 @@
         margin-top: 0;
         padding-right: 1.5em;
       }
+      .container {
+        margin-top: 2rem;
+      }
+  }
+  @media #{$brk-wide} {
+    .container {
+      margin-top: 1rem;
+    }
   }
 }
 
