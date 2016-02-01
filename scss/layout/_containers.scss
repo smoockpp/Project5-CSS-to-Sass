@@ -1,0 +1,106 @@
+
+
+.main-student {
+  width: 90%;
+  margin: 3em auto;
+  .container {
+    @extend %clearfix;
+  }
+  @media #{$brk-narrow} {
+      @include margin-left-right(2.5%, 2.5%);
+      width: 95%;
+      .main-text {
+        float: left;
+        width: 60%;
+        text-align: left;
+        margin-top: 0;
+        padding-right: 1.5em;
+      }
+  }
+}
+
+.main-image {
+  @include margin-top-bottom(1em, 1em);
+  @extend %b-shadow;
+  max-width: 100%;
+  border-top: 10px solid $color-border;
+  border-radius: 10px 20px;
+  @media #{$brk-narrow} {
+      float: right;
+      width: 40%;
+  }
+}
+
+
+ul#gallery {
+  @extend %clearfix;
+  margin: 0; 
+  padding: 0;
+  list-style: none;
+  @media #{$brk-narrow} {
+    @include padding-left-right(0, 0);
+    text-align: center;
+
+
+    li:nth-child(3),li:nth-child(7) {
+      clear: left;
+    }
+
+    li:nth-child(9) {
+      clear: right;
+    }
+  }
+  @media #{$brk-wide} {
+    li:nth-child(3) {
+      clear: none;
+    }
+
+    li:nth-child(4), li:nth-child(10) {
+      clear: left;
+    }
+  }
+}
+
+ul#gallery li {
+  padding-top: 2em;
+  width: 90%;
+  margin: $margin-zero-auto;
+  @media #{$brk-narrow} {
+    @include margin-left-right(2.5%, 2.5%);
+    float: left;
+    padding-top: 2em;
+    width: 45%;
+    
+  }
+  @media #{$brk-wide} {
+      @include margin-left-right(1%, 1%);
+      width: 31%;
+
+  }
+}
+
+.portfolio {
+  @include padding-left-right(1em, 1em);
+  @extend %centered;
+  max-width: 90%;
+  margin: 2.5em auto;
+}
+
+.main-contact {
+  padding: 4em 0;
+  background-color: $color-third;
+  margin: 2.5em auto 0;
+}
+
+.container {
+  @media #{$brk-narrow} {
+    width: 100%;
+    margin: $margin-zero-auto;
+  }
+
+  @media #{$brk-wide} {
+    width: 80%;
+    max-width: 1150px;
+  }
+}
+

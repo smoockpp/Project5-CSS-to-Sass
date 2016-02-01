@@ -1,0 +1,22 @@
+// Center text
+
+%centered {
+ text-align: center;
+}
+
+// Bottom border
+
+
+%b-shadow {
+  box-shadow: 0 2px 1px $color-shadow;
+}
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

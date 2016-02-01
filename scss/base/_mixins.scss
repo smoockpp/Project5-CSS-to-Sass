@@ -1,0 +1,49 @@
+// Web fonts
+
+@mixin font-face($family) {
+  @font-face {
+    font-family: $family;
+  }
+}
+
+// Text
+
+@mixin text($size, $l-height: null, $weight: null, $color: null) {
+  font-size: $size;
+  line-height: $l-height;
+  font-weight: $weight;
+  color: $color;
+}
+
+// Margins
+
+@mixin margin-left-right($left, $right) {
+	margin-left: $left;
+	margin-right: $right;
+}
+
+@mixin margin-top-bottom($top, $bottom) {
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
+
+// Paddings
+
+@mixin padding-left-right($left, $right) {
+	padding-left: $left;
+	padding-right: $right;
+}
+
+@mixin padding-top-bottom($top, $bottom) {
+	padding-top: $top;
+	padding-bottom: $bottom;
+}
+
+
+
+
+
+
+
+
+

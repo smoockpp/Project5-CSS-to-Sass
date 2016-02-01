@@ -1,0 +1,36 @@
+/* Web Fonts -------------------- */
+
+/* Web Fonts -------------------- */
+
+@include font-face('Roboto');
+
+#gallery h2 {
+    @include margin-top-bottom(1.75rem, 2rem);
+    font-weight: normal;
+}
+
+.main-contact p {
+  @include text(1.125em, $color: $white);
+  padding-bottom: 1em;
+  width: 90%;
+  margin: $margin-zero-auto;
+  @media #{$brk-narrow} {
+    width: 60%;
+  }
+}
+
+.footer-name  p {
+  @include text(1.25em, $weight: bold, $color: $color-text-orange );
+}
+
+.footer-top p {
+  @include margin-top-bottom(1.4375em, 1.4375em);
+}
+
+.footer-top a {
+  @include text(1em, $weight: bold, $color: $color-text-orange);
+  vertical-align: middle;
+  &:hover {
+    color: $color-link-hover;
+  }
+}

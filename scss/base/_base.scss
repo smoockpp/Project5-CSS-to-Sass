@@ -1,0 +1,53 @@
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @extend %centered;
+  @include text(1em, 1.6, 300, $color-link-nav);
+  font-family: $stack-sans-serif;
+  background-color: $color-body;
+}
+
+p {
+  @include text(1em, $color: $color-text-ebony);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $color-text-ebony;
+  margin-top: 0;
+}
+
+
+a {
+  color: $color-link-nav;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* Pseudo-classes ------------------ */
+
+a {
+  &:link {
+    color: $color-link-nav;
+
+  }
+  &:visited {
+    color: $color-link-nav;
+  }
+  &:hover {
+    color: $color-link-hover;
+  }
+}

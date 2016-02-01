@@ -1,0 +1,76 @@
+.main-header {
+  @include padding-top-bottom(1.25em, 1.25em);
+  @extend %centered;
+  @extend %b-shadow;
+  @extend %clearfix;
+  background-color: $color-prim;
+  margin-bottom: 2.5em;
+  .container {
+  	@extend %clearfix;
+  }
+  @media #{$brk-narrow} {
+  	border-bottom: solid 3px #f2b632;
+  	.main-nav li {
+		display: inline-block;
+	}
+	.main-nav a {
+		background-color: transparent;
+	}
+	select {
+		display: none;
+	}
+  }
+  select {
+	width: 94%;
+	margin: 11px  0 11px 2%;
+	float: left;
+  }	  
+}
+
+// Name and navigation style
+
+.name {
+	font-size: 2.5em;
+	margin: 0;
+	a {
+		display: block;
+		padding: 10px 15px;
+		&:hover {
+			color: $color-link-hover;
+		}
+	}
+	@media #{$brk-wide} {
+		float: left;
+		margin-top: .7rem;
+	}
+}
+
+.main-nav {
+	display: none;
+	margin: .5em auto 0;
+	width: 90%;
+	a {
+		@include text(1em, $weight: bold);
+		display: block;
+		padding: 10px 15px;
+		margin-top: 5px;
+		background-color:  rgba(255, 255, 255, 0.3);
+		&:hover {
+			color: $color-link-hover;
+		}
+		&.selected {
+    	color: $color-link-hover;
+    	}	
+	}
+	@media #{$brk-narrow} {
+		display: block;
+	}
+	@media #{$brk-wide} {
+		display: block;
+  		margin-top: 1.6rem;
+		float: right;
+		display: inline;
+		width: auto;
+  	}
+
+  }

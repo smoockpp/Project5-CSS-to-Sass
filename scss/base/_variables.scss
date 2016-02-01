@@ -1,0 +1,50 @@
+// Descriptive color variables
+
+$white          : #fff;
+$black          : #000;
+$dark-grey      : #3a3a3a;
+$ebony-clay		: #252839;
+$orange 		: #f2b632;
+$nevada			: #677077;
+$alabaster		: #fafafa;
+
+// Functional color variables
+
+$color-prim         : $ebony-clay;
+$color-sec          : $orange;
+$color-third		: $nevada;
+
+
+$color-link-nav  	: $orange;
+$color-link-hover	: lighten($orange, 20%);
+$color-text-base    : $black;
+$color-text-ebony	: $ebony-clay;
+$color-text-white	: $white;
+$color-text-orange	: $orange;
+
+$color-border		: $orange;
+
+
+$color-shadow       : rgba($black,.3);
+$color-body			: $alabaster;
+
+// Font stacks
+
+$stack-sans-serif : 'Roboto', Arial, sans-serif;
+
+// Media queries breakpoints
+
+$brk-narrow  : '(min-width: 768px)';
+$brk-wide    : '(min-width: 1024px)';
+
+
+// Margins
+
+$margin-zero-auto : 0 auto;
+
+
+
+
+
+
+

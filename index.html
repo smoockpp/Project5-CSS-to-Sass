@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive layout</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/application.css">
+</head>
+<body>
+	
+	<header  id="top" class="main-header">
+		<div class="container">
+			<h1 class="name"><a href="#">Nikolay Nikolov</a></h1>
+			<ul class="main-nav">
+				<li><a href="#top" class="selected">HOME</a></li>
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
+		
+	</header><!--/.main-header-->   
+
+	<div class="main-student">
+		<div class="container">
+		     <img src="img/niki-medium.jpg" alt="Niki and Zori in Bristol." class="main-image"/>
+			<p class="main-text">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use! <br />Graphic design and Front End Development services. <br /> - HTML5, CSS3, JavaScript <br /> - Bootstrap, Sass, jQuery <br /> - Graphic Design - logo design, business card design, flyer design, banner design, website mock-up design etc. </p>
+		</div>
+	</div> <!--  /.main-student -->
+
+
+	<div class="container">
+		<div id="portfolio" class="main-portfolio">
+			<h3>PORTFOLIO</h3>
+			<ul id="gallery">
+				<li>
+					<a href="img/portfolio-1.png">
+						<img src="img/portfolio-1.png" alt="Marketing Page.">
+					</a>
+					<h2>Marketing Page</h2>
+					<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+				</li>
+				<li>
+					<a href="img/portfolio-2.png">
+						<img src="img/portfolio-2.png" alt="Search Page.">
+					</a>
+					<h2>Search Page</h2>
+					<p>THis project searches through a specific database to find information that the user is trying to look up.</p>
+				</li>
+				<li>
+					<a href="img/portfolio-3.png">
+						<img src="img/portfolio-3.png" alt="Travel App.">
+					</a>
+					<h2>Travel App</h2>
+					<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+				</li>
+				<li>
+					<a href="img/portfolio-6.png">
+						<img src="img/portfolio-6.png" alt="Map of favourite spots.">
+					</a>
+					<h2>Map of Favourite Spots</h2>
+					<p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
+				</li>
+				<li>
+					<a href="img/portfolio-5.png">
+						<img src="img/portfolio-5.png" alt="Photo Gallery.">
+					</a>
+					<h2>Photo Gallery</h2>
+					<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+				</li>
+				<li>
+					<a href="img/portfolio-4.png">
+						<img src="img/portfolio-4.png" alt="Calculator.">
+					</a>
+					<h2>Calculator</h2>
+					<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+				</li>
+				<li>
+					<a href="img/portfolio-7.png">
+						<img src="img/portfolio-7.png" alt="Video Player.">
+					</a>
+					<h2>Video Player</h2>
+					<p>Flat designed video player, with playlists and all normal functions.</p>
+				</li>
+				<li>
+					<a href="img/portfolio-13.png">
+						<img src="img/portfolio-13.png" alt="Error messagee.">
+					</a>
+					<h2>Error</h2>
+					<p>If users input or selection is invalid, error message shows on top of page.</p>
+				</li>
+				<li>
+					<a href="img/portfolio-12.png">
+						<img src="img/portfolio-12.png" alt="Form.">
+					</a>
+					<h2>Form</h2>
+					<p>HTML5 input form, designed with CSS3.</p>
+				</li>
+				<li>
+					<a href="img/portfolio-9.png">
+						<img src="img/portfolio-9.png" alt="Wordpress Theme.">
+					</a>
+					<h2>Wordpress Theme</h2>
+					<p>Theme developed for Wordpress with sidebar option. Fully responsive.</p>
+				</li>
+			</ul>
+		</div><!--  /.portfolio -->
+		</div><!--/.container-->
+		<div id="contact" class="main-contact">
+			<h3>CONTACT</h3>
+			<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+			<p>Phone &nbsp; <strong><a href="tel:+44-74553-18061">+44 7455 318061</a></strong></p>
+			<p>Email &nbsp; <strong><a href="mailto:smoockpp@gmail.com">smoockpp@gmail.com</a></strong></p>
+
+		</div> <!--  /.main-contact -->
+		
+	
+
+	<footer class="main-footer">
+		<div class="container">
+		<ul class="footer-mobile">
+			<li class="footer-name">
+				<p><a href="#top">Nikolay Nikolov</a></p>
+			</li>
+			<li class="footer-top">
+				<p><a href="#top">BACK TO TOP</a></p>
+			</li>
+		</ul>
+		<ul class="footer-nav">
+				<li><a href="#top" class="active">HOME</a></li>
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+		</ul>
+		</div>
+	</footer> <!--  /.main-footer -->
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/sticky/jquery.sticky.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
